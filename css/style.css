@@ -12,6 +12,11 @@ ul {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .logo {
     width: 50px;
     height: 50px;
@@ -52,6 +57,8 @@ ul {
     border: none;
     background-color: #F8F9FE;
     color: #9AA3AE;
+    transition: 0.2s ease;
+    position: relative;
 }
 
 .section-icon{
@@ -63,3 +70,17 @@ ul {
     font-size: 15px;
 }
 
+.section:hover{
+    background-color: #E5EAFE;
+    color: #316AEC;
+    transform: scale(1.15);
+    z-index: 10;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.section:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+}
