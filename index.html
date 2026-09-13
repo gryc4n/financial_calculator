@@ -74,29 +74,162 @@
         <section id="dashboard" class="dashboard">
             <div class="dashboard-header">
                 <div class="section-title">
-                    <h2 class="title">Dashboard</h2>
+                    <h2 class="title-dashboard">Dashboard</h2>
                     <p class="description">Here's your financial overwiew. Keep going!</p>                    
                 </div>
-                <button class="expenses">ADD EXPENSES</button>
+                <button class="btn-expenses">Add Expenses</button>
             </div>
             <div class="dashboard-balance">
-                <div class="total-balance info">
-                    <img class="info-icon" data-icon="iconBAL" src="/assets/icons/dashboard-icons/color/iconBAL.svg" alt="balance icon">
-
+                <div class="dash-total-balance dash-info">
+                    <img class="info-icon dash-bal" data-icon="iconBAL" src="/assets/icons/dashboard-icons/color/iconBAL.svg" alt="balance icon">
+                    <span class="dash-text-info ">Total Balance</span>
+                    <span class="dash-value-info balance-value">$4,820.00</span>
                 </div>
-                <div class="monthly-income info">
-                    <img class="info-icon" data-icon="iconINC" src="/assets/icons/dashboard-icons/color/iconINC.svg" alt="income icon">
-
+                <div class="dash-monthly-income dash-info">
+                    <img class="info-icon dash-inc" data-icon="iconINC" src="/assets/icons/dashboard-icons/color/iconINC.svg" alt="income icon">
+                    <span class="dash-text-info">Monthly Income</span>
+                    <span class="dash-value-info income-value">$4,820.20</span>
                 </div>
-                <div class="monthly-expenses info">
-                    <img class="info-icon" data-icon="iconEXP" src="/assets/icons/dashboard-icons/color/iconEXP.svg" alt="expenses icon">
-
+                <div class="dash-monthly-expenses dash-info">
+                    <img class="info-icon dash-exp" data-icon="iconEXP" src="/assets/icons/dashboard-icons/color/iconEXP.svg" alt="expenses icon">
+                    <span class="dash-text-info">Monthly Expenses</span>
+                    <span class="dash-value-info expenses-value">$2,157.34</span>
                 </div>
-                <div class="total-savings info">
-                    <img class="info-icon" data-icon="iconTOTSAV" src="/assets/icons/dashboard-icons/color/iconTOTSAV.svg" alt="savings icon">
-
+                <div class="dash-total-savings dash-info">
+                    <img class="info-icon dash-totsav" data-icon="iconTOTSAV" src="/assets/icons/dashboard-icons/color/iconTOTSAV.svg" alt="savings icon">
+                    <span class="dash-text-info">Total Savings</span>
+                    <span class="dash-value-info savings-value">$1,346.33</span>
                 </div>
             </div>
+            <div class="dashboard-money-comparison dash-comp">
+                <div class="dash-spending-overview dash-stat-cont">
+                    <div class="dash-sec-title">
+                        <div class="desh-sec-wrapper">
+                            <span class="dash-comp-title">Spending Overview</span>
+                            <span class="dash-comp-desc">Your expenses by category</span>
+                        </div>
+                        <button class="dash-month-selector">
+                            <img class="dash-month-selector-icon" src="/assets/icons/dashboard-icons/color/iconMONTH.svg" alt="arrow down">
+                            <span class="dash-month-selector-text month-value">September</span>
+                        </button>
+                    </div>
+                    <div class="dash-sec-chart-statistics">
+                        <div class="dash-spending-chart">
+                            <svg class="dash-pie-chart"></svg>
+                        </div>
+                        <div class="dash-statistics">
+                            <div class="dash-spending-cat">
+                                <span class="dash-category-dot housing-col"></span>
+                                <span class="dash-category-name">Housing</span>
+                                <span class="dash-category-percent">35%</span>
+                                <span class="dash-category-amount">$763</span>
+                            </div>
+                                <div class="dash-spending-cat">
+                                <span class="dash-category-dot food-col"></span>
+                                <span class="dash-category-name">Food</span>
+                                <span class="dash-category-percent">18%</span>
+                                <span class="dash-category-amount">$392</span>
+                            </div>
+                            <div class="dash-spending-cat">
+                                <span class="dash-category-dot transport-col"></span>
+                                <span class="dash-category-name">Transport</span>
+                                <span class="dash-category-percent">12%</span>
+                                <span class="dash-category-amount">$262</span>
+                            </div>
+                            <div class="dash-spending-cat">
+                                <span class="dash-category-dot entertainment-col"></span>
+                                <span class="dash-category-name">Entertainment</span>
+                                <span class="dash-category-percent">10%</span>
+                                <span class="dash-category-amount">$218</span>
+                            </div>
+                            <div class="dash-spending-cat">
+                                <span class="dash-category-dot subs-col"></span>
+                                <span class="dash-category-name">Subscriptions</span>
+                                <span class="dash-category-percent">8%</span>
+                                <span class="dash-category-amount">$175</span>
+                            </div>
+                            <div class="dash-spending-cat">
+                                <span class="dash-category-dot other-col"></span>
+                                <span class="dash-category-name">Other</span>
+                                <span class="dash-category-percent">17%</span>
+                                <span class="dash-category-amount">$370</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="dashboard-money-distribution dash-stat-cont">
+                    <div class="dash-sec-title">
+                        <div class="sec-title-comp">
+                            <span class="dash-comp-title">Income vs Expenses</span>
+                            <span class="dash-comp-desc">Monthly comparison</span>
+                        </div>
+                        <div class="sec-title-legend">
+                            <div class="dash-stat-income dash-stat-legend">
+                                <span class="dash-comp-inc dash-dot"></span>
+                                <span class="dash-comp-inc-label">Income</span>   
+                            </div>
+                            <div class="dash-stat-income dash-stat-legend">
+                                <span class="dash-comp-exp dash-dot"></span>
+                                <span class="dash-comp-exp-label">Expenses</span>   
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="dash-bar-chart-cont">
+                        <svg class="bar-chart"></svg>
+                    </div>
+                </div>  
+            </div>    
+            <div class="dash-transactions-goals-actions">
+                <div class="dash-card-container">
+                    <div class="dash-recent-transations">
+                        <div class="dash-recent">
+                            <span class="dash-card-label">Recent Transations</span>
+                            <button class="dash-all-transaction-btn">View all</button>
+                        </div>
+                        <div class="transactions-container">
+                            <div class="dash-transation-card">
+                                <img class="dash-card-icon" alt="transation icon" src="/assets/icons/dashboard-icons/color/iconINC.svg">
+                                <div class="dash-transation-card-info-wraper">
+                                    <span class="dash-transation-origin">Salary</span>
+                                    <span class="dash-transation-category">Income</span> 
+                                </div>
+                                <span class="transation-value transation-origin-style">+$3,500.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dash-card-container">
+                    <div class="dash-recent">
+                        <span class="dash-card-label">Saving Goals</span>
+                        <button class="dash-all-transaction-btn">View all</button>
+                    </div>
+                    <div class="dash-transation-card">
+                        <img class="dash-card-icon" alt="transation icon" src="/assets/icons/dashboard-icons/color/iconINC.svg">
+                        <div class="dash-card-info-wraper">
+                            <span class="dash-origin">Vacation</span>
+                            <span class="dash-amount-value dash-amount-style">$800 / $1200</span> 
+                        </div>
+                    </div>    
+                </div>
+                <div class="dash-card-container">
+                    <div class="quick-actions-wraper">
+                        <span class="dash-card-label quick-action-style">Quick Actions</span>
+                        <div class="dash-quick-actions-container">
+                            <button class="dash-action-btn ">
+                                <img class="dash-action-icon" alt="transation icon" src="/assets/icons/dashboard-icons/color/iconINC.svg">
+                                <span class="dash-origin">Add Transaction</span>
+                            </button>
+                            <button class="dash-action-btn ">
+                                <img class="dash-action-icon" alt="transation icon" src="/assets/icons/dashboard-icons/color/iconINC.svg">
+                                <span class="dash-origin">New Goal</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                        
+                </div>
+            </div>
+
         </section>
         <section class="budgeting">
             
