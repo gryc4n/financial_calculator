@@ -95,3 +95,47 @@ a {
     min-width: 0;
 }
 
+.section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.title-sec{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.description{
+    font-size:15px;
+    color: #8B97BD;
+    margin-top: 0px;
+}
+
+.btn-expenses{
+    margin-right: 35px;
+    background-color: #316AEC;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    width: 120px;
+    height: 55px;
+    font-size: 13px;
+}
+
+.btn-expenses:hover{
+    transform: scale(1.05);
+    z-index: 5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.btn-expenses:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard, .budgeting, .loan-graph, .savings, .loan-calculator, .reports, .plans-fee, .settings{
+    margin-left: 20px;
+}

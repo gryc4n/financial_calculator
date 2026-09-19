@@ -1,54 +1,12 @@
 /* DASHBOARD */
 
 .dashboard{
-    margin-left: 20px;
     flex: 1;
     min-width: 0;
     height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
 
-}
-
-.dashboard-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-.title-dashboard{
-    font-size: 30px;
-    margin-bottom: 5px;
-}
-
-.description{
-    font-size:15px;
-    color: #8B97BD;
-    margin-top: 0px;
-}
-
-.btn-expenses{
-    margin-right: 35px;
-    background-color: #316AEC;
-    border-radius: 40px;
-    border: none;
-    color: white;
-    width: 120px;
-    height: 55px;
-    font-size: 13px;
-}
-
-.btn-expenses:hover{
-    transform: scale(1.05);
-    z-index: 5;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    cursor: pointer;
-}
-
-.btn-expenses:active {
-    transform: scale(0.97);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
 }
 
 .dashboard-balance{
